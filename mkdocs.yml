@@ -1,0 +1,28 @@
+site_name: Your Website
+# repo_url: https://github.com/<your-username>/<your-website>
+# edit_uri: edit/mkdocs/docs/
+theme:
+  name: material
+  language: en
+  features:
+    - content.action.view
+    - content.code.copy
+  palette:
+    primary: red
+plugins:
+  - blog:
+      blog_dir: blog
+  - glightbox:
+      auto_caption: true
+  - offline
+  - search
+  - tags
+markdown_extensions:
+  - pymdownx.extra
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
+      use_pygments: true
+  - pymdownx.magiclink
+  - pymdownx.tasklist
